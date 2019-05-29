@@ -2,7 +2,6 @@ import os
 import sqlite3
 
 DBFILENAME = os.path.join(os.path.dirname(__file__), "app", 'termtrader.db')
-# DBFILENAME = 'termtrader.db'
 
 def create_db(dbfilename=DBFILENAME):
     with sqlite3.connect(dbfilename) as conn:
